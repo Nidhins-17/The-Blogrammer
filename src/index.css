@@ -5,6 +5,7 @@
 *{
   margin : 0;
   font-family : "Quicksand";
+  /* background-color: yellow; */
   color : #333;
 }
 
@@ -50,11 +51,114 @@
 
 .blogPreview:hover{
   box-shadow : 1px 3px 5px rgba(0,0,0,0.5);
+  border : 2px solid #f1356d;
+  border-radius : 24px;
 }
 
 .blogPreview h2{
   font-size : 20px;
   color : #f1356d;
   margin-bottom : 8px;
+}
+
+.blogPreview a{
+  text-decoration : none;
+}
+
+/* blog details page */
+
+.blog-details h2{
+  font-size : 20px;
+  color : #008438;
+  margin-bottom : 10px;
+}
+
+.blog-details div{
+  margin : 20px 0;
+  border : 1px solid black;
+  border-radius : 16px;
+  padding : 7px;
+  color : #C7418F;
+}
+
+.blog-details button{
+  background : #f1356d;
+  color : #fff;
+  border : 0;
+  padding : 8px;
+  border-radius : 8px;
+  cursor : pointer;
+}
+
+/* create new blog */
+
+.create{
+  max-width : 400px;
+  margin : 0 auto;
+  text-align : center;
+}
+
+
+.create label{
+  text-align : left;
+  display : block;
+}
+
+.create h3{
+  font-size : 20px;
+  color : #f1356d;
+  margin-bottom : 30px;
+}
+
+.create input, .create textarea, .create select{
+  width : 100%;
+  padding : 6px 10px;
+  margin : 10px 0;
+  border : 2px solid rgb(2, 1, 17);
+  border-radius : 8px;
+  box-sizing : border-box;
+  display : block;
+}
+
+.create button{
+  background : #f1356d;
+  color : white;
+  border : 0;
+  margin : 10px;
+  padding : 9px;
+  border-radius : 8px;
+  cursor : pointer;
+}
+
+
+
+.notfound p,.notfound a{
+  padding : 5px 10px;
+}
+
+
+
+.Home{
+  color : black;
+  background-color : #f1356d;
+  border-radius : 8px;
+}
+
+.NewBlog{
+  color : black;
+  background-color : #f1356d;
+  border-radius : 8px;
+}
+
+.Home:hover{
+  color : #F7F5DD;
+  /* background-color : #60BAAE; */
+  border-radius : 8px;
+}
+
+.NewBlog:hover{
+  color : #F7F5DD;
+  /* background-color : #60BAAE; */
+  border-radius : 8px;
 }
 

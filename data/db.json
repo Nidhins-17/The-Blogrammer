@@ -1,17 +1,34 @@
 {
-    "blogs": [
-        {
-            "title" : "My first blog",
-            "body" : "Do they still make those giant Tips and Tricks books? Pretty helpful, if you ask me. Anyway, I have some tips for you, but first, new music from myself and my crew. 1) I used to rap this song to his students on the first day, as a former middle school educator. The track is produced by Richie Branson, who this week exploded with his #BringBackToonami campaign, even landing play on 2 Adult Swim bumpers. Props!",
-            "author" : "mario",
-            "id" : 1
-        },
-        {
-            "title" : "parity blog",
-            "body" : "Took the plunge. Dealing with the fall-out. About to secure my freedom from the evil tentacled monster. Takes 12 steps, but I hit a brick wall at 8.Took time off to recuperate and recover my energy. Now back from paradise, rejuvenated and ready to take on the beast again. All eyes on the prize, one more trip to deliver the coup de grace to that other beast in the west. Once that's done, its just a matter of time and protocol until the next step is reached.",
-            "author" : "luigi",
-            "id" : 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "My first blog",
+      "body": "Do they still make those giant Tips and Tricks books? Pretty helpful, if you ask me. Anyway, I have some tips for you, but first, new music from myself and my crew. 1) I used to rap this song to his students on the first day, as a former middle school educator. The track is produced by Richie Branson, who this week exploded with his #BringBackToonami campaign, even landing play on 2 Adult Swim bumpers. Props!",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "parity blog",
+      "body": "Took the plunge. Dealing with the fall-out. About to secure my freedom from the evil tentacled monster. Takes 12 steps, but I hit a brick wall at 8.Took time off to recuperate and recover my energy. Now back from paradise, rejuvenated and ready to take on the beast again. All eyes on the prize, one more trip to deliver the coup de grace to that other beast in the west. Once that's done, its just a matter of time and protocol until the next step is reached.",
+      "author": "yoshi",
+      "id": 2
+    },
+    {
+      "title": "Sudesannn",
+      "body": "sdjfklsdjfjsdlkjfklsdjfljsdlfjdjf",
+      "author": "mario",
+      "id": 6
+    },
+    {
+      "title": "bionsdfnd",
+      "body": "iejwdklfdiofjeio",
+      "author": "mario",
+      "id": 7
+    },
+    {
+      "title": "hello aliens",
+      "body": "this is a react website, now i am checking useHistory to function",
+      "author": "mario",
+      "id": 8
+    }
+  ]
 }
-

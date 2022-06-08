@@ -1,9 +1,10 @@
 import React from 'react';
-import {useState,useEffect} from 'react';
-import Bloglist from '../Bloglist'
+import Bloglist from '../Bloglist';
+import useFetch from '../useFetch';
 
 const Home = () => {
 
+    // not required, we are using a local server
 
     // const [blogs, setBlogs] = useState([
     //     {title : 'Learning React', body : "lorem ipsom ...", author : "Itachi", id : 1},
@@ -11,38 +12,27 @@ const Home = () => {
     //     {title : "Projects React", body : "lorem ipsom ...", author : "ThomasShelby", id : 4}
     // ]);
 
-    const [blogs, setBlogs] = useState(null);
+    // const handleDelete = (id) => {
+    //     const newBlogs = blogs.filter((blog) => blog.id !== id);
+    //     setBlogs(newBlogs);
+    // }
 
-    const [name,setName] = useState('mario');
 
+    // the syntax is data in this context is called blogs for understanding
+    const {data: blogs, isLoading, error} = useFetch('http://localhost:8000/blogs');
 
-
-    const handleDelete = (id) => {
-        const newBlogs = blogs.filter((blog) => blog.id !== id);
-        setBlogs(newBlogs);
-    }
-
-    useEffect(()=>{
-        // fetching the data from json file
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            return res.json();
-        })
-        .then((data) => {
-            setBlogs(data);
-        })
-    },[]);
 
 
     return (
         <div className="home">
+            {error && <div> {error} </div> }
             {/* props are used */}
             {/* javascript is used to eliminate the error of null value in blogs */}
-            { blogs && <Bloglist blogs = {blogs} title = "All blogs" handleDelete = {handleDelete}></Bloglist> }
+            {isLoading && <div>Loading...</div>}
+            { blogs && <Bloglist blogs = {blogs} title = "All blogs"></Bloglist> }
             {/* <Bloglist blogs = {blogs.filter((blog) => blog.author === 'ThomasShelby')} title = "Thomas blogs"></Bloglist>  */}
         </div>
     );
 }
 
 export default Home;
-
